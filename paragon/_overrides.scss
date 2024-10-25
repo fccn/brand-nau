@@ -1,2 +1,24 @@
 // Use this file to define style overrides for @edx/paragon
 // This file is included after all Paragon styles, but should generally avoid using private mixins in Paragon.
+
+/**
+* Learner Dashboard override
+* component: frontend-app-learner-dashboard/src/container/LearnerDashboardHeader
+*
+* This override removes the bottom underlines and replaces it with a bold
+* to contextualize the current page.
+*/
+.learner-variant-header {
+  a {
+    // needed to make the link not resize the header
+    border-bottom: 2px solid transparent;
+  }
+  .course-link {
+    font-weight: 600;
+    border-bottom: none !important;
+  }
+
+  .course-link:hover {
+    border-bottom: none !important;
+  }
+}
