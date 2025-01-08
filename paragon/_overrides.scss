@@ -22,3 +22,23 @@
     border-bottom: none !important;
   }
 }
+
+/**
+ * Instructor Toolbar override
+ *
+ * This override moves the Instrutor toolbar from the top of the page to the bottom.
+ */
+div[data-testid="instructor-toolbar"] {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+
+  // Increase the size of view in Studio action button so it isn't put bellow the Help widget that is on the bottom of the page.
+  .container-xl {
+    span:last-child {
+      width: 12rem;
+    }
+  }
+}
