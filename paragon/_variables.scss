@@ -11,8 +11,8 @@ $font-family-sans-serif: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Se
   "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 
 // Button component overrides
-$btn-border-radius: 50rem !default;
-$btn-border-radius-sm: 50rem !default;
-$btn-border-radius-lg: 50rem !default;
+$btn-border-radius: .25rem !default;
+$btn-border-radius-sm: .25rem !default;
+$btn-border-radius-lg: .25rem !default;
 
 $custom-control-indicator-checked-color: $primary;
