@@ -42,3 +42,18 @@ div[data-testid="instructor-toolbar"] {
     }
   }
 }
+
+/**
+ * Increase the size of the logo in the header
+ *
+ * This override increases the header logo on all header implementations.
+ */
+#root {
+    header {
+        div {
+            a.logo {
+                height: 5rem;
+            }
+        }
+    }
+}
