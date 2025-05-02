@@ -24,10 +24,10 @@
 }
 
 /**
- * Instructor Toolbar override
- *
- * This override moves the Instrutor toolbar from the top of the page to the bottom.
- */
+* Instructor Toolbar override
+*
+* This override moves the Instrutor toolbar from the top of the page to the bottom.
+*/
 div[data-testid="instructor-toolbar"] {
   position: fixed;
   bottom: 0;
@@ -44,16 +44,43 @@ div[data-testid="instructor-toolbar"] {
 }
 
 /**
- * Increase the size of the logo in the header
- *
- * This override increases the header logo on all header implementations.
- */
+* Increase the size of the logo in the header
+*
+* This override increases the header logo on all header implementations.
+*/
 #root {
-    header {
-        div {
-            a.logo {
-                height: 5rem;
-            }
-        }
+  header {
+    div {
+      a.logo {
+        height: 5rem;
+      }
     }
+  }
+}
+
+/**
+* Remove the background of the tab navigation bar
+*
+* Clean up the visual glitch of changing font weight on hover
+* and remove the background
+*/
+.course-tabs-navigation {
+  border-top: solid 1px #eaeaea;
+  margin-top: 1.25rem;
+
+  .nav {
+    & a:not(.active):hover,
+    & a:hover, 
+    & button:hover {
+      background-color: transparent !important;
+    }
+  }
+}
+
+.nav-underline-tabs {
+  .nav-link {
+    &:hover, &:focus, &.active {
+      font-weight: 500;
+    }
+  }
 }
