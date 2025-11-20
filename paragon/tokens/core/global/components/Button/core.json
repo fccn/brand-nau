@@ -1,0 +1,26 @@
+{
+  "size": {
+    "$type": "dimension",
+    "btn": {
+      "border": {
+        "width": { "source": "$btn-border-width", "$value": "{size.input.btn.border-width}" },
+        "radius": {
+          "base": { "source": "$btn-border-radius", "$value": ".25rem" },
+          "lg": { "source": "$btn-border-radius-lg", "$value": "{size.btn.border.radius.base}" },
+          "sm": { "source": "$btn-border-radius-sm", "$value": "{size.btn.border.radius.base}" }
+        }
+      },
+      "focus": {
+        "width": { "source": "$btn-focus-width", "$value": "2px" },
+        "border-radius": {
+          "base": {
+            "source": "$btn-focus-border-radius",
+            "$value": "calc({size.btn.border.radius.base} + {spacing.btn.focus.border-gap})"
+          },
+          "lg": { "source": "$btn-focus-border-radius-lg", "$value": "{size.btn.focus.border-radius.base}" },
+          "sm": { "source": "$btn-focus-border-radius-sm", "$value": "{size.btn.border.radius.base}" }
+        }
+      }
+    }
+  }
+}

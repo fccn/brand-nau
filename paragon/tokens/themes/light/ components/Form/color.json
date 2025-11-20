@@ -1,0 +1,12 @@
+{
+  "color": {
+    "form": {
+      "checked": {
+        "base": {
+          "source": "$custom-control-indicator-checked-color",
+          "$value": "{color.primary.base}"
+        }
+      }
+    }
+  }
+}
