@@ -1,0 +1,34 @@
+{
+  "typography": {
+    "font": {
+      "family": {
+        "$type": "fontFamily",
+        "base": {
+          "source": "$font-family-base",
+          "$value": "{typography.font.family.sans.serif}",
+          "$description": "Basic font family."
+        },
+        "sans": {
+          "serif": {
+            "source": "$font-family-sans-serif",
+            "$value": [
+              "IBM Plex Sans",
+              "-apple-system",
+              "BlinkMacSystemFont",
+              "Segoe UI",
+              "Helvetica Neue",
+              "Arial",
+              "Noto Sans",
+              "sans-serif",
+              "Apple Color Emoji",
+              "Segoe UI Emoji",
+              "Segoe UI Symbol",
+              "Noto Color Emoji"
+            ],
+            "$description": "Sans-serif font family."
+          }
+        }
+      }
+    }
+  }
+}
